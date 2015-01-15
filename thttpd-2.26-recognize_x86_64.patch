@@ -1,0 +1,13 @@
+diff -u thttpd-2.26/config.sub thttpd-2.26-patched/config.sub
+--- thttpd-2.26/config.sub	1998-05-08 21:12:58.000000000 -0400
++++ thttpd-2.26-patched/config.sub	2015-01-14 09:32:52.095588340 -0500
+@@ -164,6 +164,9 @@
+ 	i[3456]86)
+ 	  basic_machine=$basic_machine-pc
+ 	  ;;
++	x86_64-pc)
++	  basic_machine=$basic_machine-pc
++	  ;;
+ 	# Object if more than one company name word.
+ 	*-*-*)
+ 		echo Invalid configuration \`$1\': machine \`$basic_machine\' not recognized 1>&2
